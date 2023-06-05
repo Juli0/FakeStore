@@ -1,0 +1,9 @@
+<mat-grid-list cols="4" rowHeight="100px">
+	<mat-grid-tile
+		*ngFor="let element of data"
+		[colspan]="cols"
+		[rowspan]="rows"
+		[style.background]="color">
+		{{element.title}}
+	</mat-grid-tile>
+</mat-grid-list>
